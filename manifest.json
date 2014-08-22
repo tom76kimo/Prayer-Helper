@@ -1,0 +1,20 @@
+{
+  "name": "Prayer Helper",
+  "version": "0.1",
+  "description": "Hello World Gmail chrome extension",
+  "content_scripts": [
+    {
+      "matches": ["https://mail.google.com/*"],
+      "js": ["content.js"],
+      "css": ["main.css"]
+    }
+  ],
+  "web_accessible_resources": [
+    "jquery-1.11.1.min.js",
+    "gmail.min.js",
+    "gmail.js",
+    "main.js",
+    "main.css"
+  ],
+  "manifest_version": 2
+}
